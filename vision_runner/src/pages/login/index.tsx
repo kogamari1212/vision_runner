@@ -6,6 +6,7 @@ const login = () => {
   return (
     <div>
       {/*  */}
+      <Header />
       <Login />
       {/*  */}
     </div>
