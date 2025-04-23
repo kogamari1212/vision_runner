@@ -5,9 +5,10 @@ import Button from "@mui/material/Button";
 const TimeLine = () => {
   return (
     <div className={styles.timeline}>
+
       <form>
         <textarea name="" id="" placeholder="本文を入力してください"></textarea>
-        <Button size="large" variant="outlined">
+        <Button size="large" variant="outlined" color="success">
           送信
         </Button>
       </form>
