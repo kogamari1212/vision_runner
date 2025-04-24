@@ -1,17 +1,15 @@
-import Header from "@/components/Header";
-import Login from "@/components/Login";
-import SignUp from "@/components/SignUp";
-import React from "react";
+import Header from '@/components/Header';
+import SignUp from '@/components/SignUp';
+import React from 'react'
 
-const login = () => {
+const signup = () => {
   return (
     <div>
-      {/*  */}
+      {/* この中に設定したいパーツを読み込ませる */}
       <Header />
       <SignUp />
-      {/*  */}
     </div>
-  );
-};
+  )
+}
 
-export default login;
+export default signup;
