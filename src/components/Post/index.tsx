@@ -1,20 +1,19 @@
 import React from "react";
 import styles from "./style.module.scss";
+import { User } from "@/pages";
 
 type PostProps = {
-  id: number;
-  name: string;
-  date: string;
   content: string;
+  createdAt: string;
+  author: User;
 };
 
-const Post: React.FC<PostProps> = ({ name, date, content }) => {
+const Post: React.FC<PostProps> = ({ content, createdAt, author }) => {
   return (
     <div className={styles.post}>
-      <p>{name}</p>
-      <p>{date}</p>
+      <p>{new Date(createdAt).toLocaleString()}</p>
       <p>{content}</p>
-      <p className={styles.link}>リンクが入ります</p>
+      <p>{author.username}</p>
     </div>
   );
 };
