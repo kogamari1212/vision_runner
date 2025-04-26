@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style.module.scss";
-import { User } from "@/pages";
+import { User } from "@/types/user";
 
 type PostProps = {
   id?: number;
