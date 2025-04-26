@@ -58,7 +58,7 @@ const TimeLine = () => {
         return;
       }
 
-      let endpoint = mode === "task" ? "/api/future" : "/api/post";
+      const endpoint = mode === "task" ? "/api/future" : "/api/post";
       const response = await apiClient.post(
         endpoint,
         { content },
