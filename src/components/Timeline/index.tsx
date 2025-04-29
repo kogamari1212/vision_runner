@@ -132,7 +132,7 @@ const TimeLine = () => {
           onChange={(e) => setContent(e.target.value)}
           placeholder={
             mode === "task"
-              ? "未来にやりたいタスクを入力してください"
+              ? "ビジョン実現のためのタスクを入力してください"
               : "未来の自分のビジョンを入力してください"
           }
         />
